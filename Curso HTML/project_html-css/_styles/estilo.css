@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"Hack-Regular";
+    src: url("../_font/Hack-Regular.ttf");
+    src: url("../_font/Signatria.ttf");
+}
+
+body {
+    background-image: url("../_image/background.jpg");
+}
+
+header{
+	
+    height: 80px;
+	padding:24px;
+    border: 2px solid #000000;
+}
+
+h1 {
+    text-align: center;
+    font-family: Signatria;
+    font-size: 40px;
+}
+
+p {    
+    font-family: Signatria, Hack;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer{
+    clear: both;
+    height: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+#menu{
+	margin-top:20px;
+	text-align: center;
+    font-size: 30px;
+}
+
+#menu a{
+	padding:52px 50px;
+	text-decoration: none;
+	color:rgb(0, 0, 0);
+	text-shadow: 1px 1px #111111;
+}
+
+#menu a:hover{
+	background-color:#9aa09e;
+	color:rgb(0, 0, 0);
+}
+
+.circle {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000000;
+}
+
+.circle img {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#musicas_esq{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#musicas_dir{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.tabela {
+    align-items: center;
+    font-size: 75px;
+    margin: 60px;
+}
