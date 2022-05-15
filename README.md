@@ -1,2 +1,4 @@
 # repository-learn
-Repositório criado para aprendizados da DIO e anotações importantes.
+Repositório criado para aprendizados gerais e anotações importantes.
+
+1. Flexbox - Fundamentos e Projeto

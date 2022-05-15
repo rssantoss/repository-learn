@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos 5 - align-self</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .align-container-2{
+            align-items: flex-end;
+        }
+
+        .item{
+            background: rgb(60, 23, 145);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .center{
+            align-self: center; /* Estabelece o alinhamento de modo individual sobre um determinado item */
+        }
+        
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <section class="flex-container align-container">
+        <div class="item auto">12345</div>
+        <div class="item auto">ABCDE</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item auto">Item</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">12345</div>
+        <div class="item stretch">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item baseline">AABC</div>
+        <div class="item start">ABA</div>
+        <div class="item end">AABC</div>
+    </section>
+
+    <h1>Column</h1>
+    <section class="flex-container align-container-2 direction">
+        <div class="item auto">12345</div>
+        <div class="item auto">ABCDE</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item auto">Item</div>
+    </section>
+
+    <section class="flex-container direction">
+        <div class="item center">12345</div>
+        <div class="item stretch">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item baseline">AABC</div>
+        <div class="item start">ABA</div>
+        <div class="item end">AABC</div>
+    </section>
+</body>
+</html>

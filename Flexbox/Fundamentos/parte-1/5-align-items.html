@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos 5 - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: #423F60;
+            margin: 5px;
+            color: #FFFFFF;
+            text-align: center;
+            flex: 1; /* Permite os itens crescerem de acordo com o tamanho do texto */
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch; /* Cresce de acordo com o maior item */
+        }
+
+        .flex-start{
+            align-items: flex-start; /* Trazerá todos os elementos ao topo */
+        }
+
+        .flex-end{
+            align-items: flex-end; /* Trazerá todos os elementos para baixo */
+        }
+
+        .baseline{
+            align-items: baseline; /* Cresce de acordo com a linha base criada pelo texto */
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h2>center</h2>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item Teste Tamanho</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>stretch</h2>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>flex-start</h2>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>flex-end</h2>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>baseline</h2>
+    <section class="container baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Item Teste Tamanho</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    </section>
+    <br>
+    <br>
+    <h1>Column</h1>
+    <h2>flex-start</h2>
+    <section class="container flex-start column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>flex-end</h2>
+    <section class="container flex-end column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>center</h2>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Item Teste Tamanho</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>stretch</h2>
+    <section class="container stretch column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item Teste Tamanho</div>
+    </section>
+
+    <h2>baseline</h2>
+    <section class="container baseline column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Item Teste Tamanho</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    </section>
+
+    <h2>Alinhamento central à tela</h2>
+    <section class="container center central"> 
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+        </div>
+    </section>
+</body>
+</html>
