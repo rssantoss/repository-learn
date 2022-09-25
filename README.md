@@ -22,3 +22,4 @@ Repositório criado para aprendizados gerais e anotações importantes.
 4. Clone Instagram - Tela de login do Instagram clonada
 5. JavaScript - Fundamentos e Conceitos
 6. TypeScript - Fundamentos e Projeto Estacionamento
+7. React - Projeto (Currículo)
